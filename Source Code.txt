@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Edu+NSW+ACT+Foundation:wght@500&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+    *{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    
+}
+.heading1{
+    margin-top: 50px;
+    text-decoration: underline;
+}
+form{
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+}
+.navbar-brand{
+    font-weight: bold;
+}
+.navbar-nav{
+    margin-left: 50px;
+}
+.nav-item{
+    margin-left: 30px;
+    font-weight: 600;
+}
+.data{
+    width: 100%;
+    height: 70vh;
+}
+.data table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+</style>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Smart Result</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              
+          </div>
+        </div>
+      </nav>
+    <!-- navbar end -->
+    <!-- Main content -->
+    <div class="container main">
+        <h1 class="heading1 text-center">Search Your Result Easly</h1>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInput" class="form-label">Enter Your Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" required>
+                <div id="name" class="form-text">don't forget to enter your Name</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInput" class="form-label">Enter Your Roll</label>
+                <input type="number" class="form-control" id="roll" aria-describedby="emailHelp" required>
+                <div id="Roll" class="form-text">don't forget to enter your Roll!</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInput" class="form-label">Enter Your Math's Marks</label>
+                <input type="number" class="form-control" id="Math" aria-describedby="emailHelp" required>
+                <div id="math1" class="form-text">don't forget to enter your maths marks!</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInput" class="form-label">Enter Your English Marks</label>
+                <input type="number" class="form-control" id="english" required>
+                <div id="english1" class="form-text">don't forget to enter your English marks!</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInput" class="form-label">Enter Your Urdu Marks</label>
+                <input type="number" class="form-control" id="urdu" required>
+                <div id="urdu1" class="form-text">don't forget to enter your Urdu marks!</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInput" class="form-label">Enter Your Science Marks</label>
+                <input type="number" class="form-control" id="science" required>
+                <div id="science1" class="form-text">don't forget to enter your Science marks!</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInput" class="form-label">Enter Your Computer Marks</label>
+                <input type="number" class="form-control" id="computer" required>
+                <div id="computer1" class="form-text">don't forget to enter your computer marks!</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInput" class="form-label">Enter Your Physics Marks</label>
+                <input type="number" class="form-control" id="physics" required>
+                <div id="physics1" class="form-text">don't forget to enter your physics marks!</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInput" class="form-label">Thats your Total Marks</label>
+                <input type="number" class="form-control" id="total" disabled>
+                <div id="total" class="form-text">Sorry you can't change this</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInput" class="form-label">Your persentage Here</label>
+                <input type="number" class="form-control" id="persentage" disabled>
+                <div id="persentage" class="form-text">Sorry you can't change this</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInput" class="form-label">Your Grade Is</label>
+                <input type="text" class="form-control" id="Grade" disabled>
+                <div id="Grade" class="form-text">Sorry you can't change this</div>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                <label class="form-check-label" for="exampleCheck1">I will Agree To All My information is correct.</label>
+            </div>
+            <button type="button" class="btn btn-success" id="show_sum">Show My Result</button>
+           
+        </form>
+
+        <div class="data">
+            <table id="mytable">
+                <tr>
+                    <th style="border:1px solid black; padding: 5px 35px;">NAME</th>
+                    <th style="border:1px solid black; padding: 5px 35px;">ROLL</th>
+                    <th style="border:1px solid black; padding: 5px 35px;">MATHS</th>
+                    <th style="border:1px solid black; padding: 5px 35px;">ENGLISH</th>
+                    <th style="border:1px solid black; padding: 5px 35px;">URDU</th>
+                    <th style="border:1px solid black; padding: 5px 35px;">SCIENCE</th>
+                    <th style="border:1px solid black; padding: 5px 35px;">COMPUTER</th>
+                    <th style="border:1px solid black; padding: 5px 35px;">PHYSICS</th>
+                    <th style="border:1px solid black; padding: 5px 35px;">TOTAL</th>
+                    <th style="border:1px solid black; padding: 5px 35px;">PERSENTAGE</th>
+                    <th style="border:1px solid black; padding: 5px 35px;">GRADE</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- Main content end -->
+
+    <script>
+        console.log("hello world");
+        let button = document.getElementById("show_sum");
+        button.addEventListener('click',function(){
+            let math = document.getElementById("Math").value;
+            math = Number.parseInt(math);
+            let english = document.getElementById("english").value;
+            english = Number.parseInt(english);
+            let urdu = document.getElementById("urdu").value;
+            urdu = Number.parseInt(urdu);
+            let science = document.getElementById("science").value;
+            science = Number.parseInt(science);
+            let computer = document.getElementById("computer").value;
+            computer = Number.parseInt(computer);
+            let physics = document.getElementById("physics").value;
+            physics = Number.parseInt(physics);
+            // alert("hi shaheer i am here")
+            // console.log(math,english,urdu,science,computer,physics)
+            let total = math+english+urdu+science+computer+physics;
+            let sum = document.getElementById("total").value=total;
+
+            let persentage = sum/600*100;
+            let show_persentage = document.getElementById("persentage").value=persentage;
+
+           if(persentage>=90){
+                let grade = document.getElementById("Grade").value="A+1 GRADE";
+           }
+           else if(persentage>=80 && persentage<90){
+            let grade = document.getElementById("Grade").value="A+ GRADE";
+
+           }
+           else if(persentage>=70 && persentage<80){
+            let grade = document.getElementById("Grade").value="A GRADE";
+
+           }
+           else if(persentage>=60 && persentage<70){
+            let grade = document.getElementById("Grade").value="B GRADE";
+
+           }
+           else if(persentage>=50 && persentage<60){
+            let grade = document.getElementById("Grade").value="C GRADE";
+
+           }
+           else if(persentage>=40 && persentage<50){
+            let grade = document.getElementById("Grade").value="D GRADE";
+
+           }
+           else if(persentage>=35 && persentage<40){
+            let grade = document.getElementById("Grade").value="E GRADE";
+
+           }
+           else{
+            let grade = document.getElementById("Grade").value="Sorry You Are Falid";
+
+           }
+
+           let one = document.getElementById("name").value;
+           let two = document.getElementById("roll").value;
+           let math_fack = document.getElementById("Math").value;
+           let english_fack = document.getElementById("english").value;
+           let urdu_fack = document.getElementById("urdu").value;
+           let science_fack = document.getElementById("science").value;
+           let computer_fack = document.getElementById("computer").value;
+           let physics_fack = document.getElementById("physics").value;
+           let total_fack = document.getElementById("total").value;
+           let persentage_fack = document.getElementById("persentage").value;
+           let grade_fack = document.getElementById("Grade").value;
+
+           let mytable = document.getElementById("mytable");
+           let row = mytable.insertRow(1);
+
+           let cell1 = row.insertCell(0);
+           let cell2 = row.insertCell(1);
+           let cell3 = row.insertCell(2);
+           let cell4 = row.insertCell(3);
+           let cell5 = row.insertCell(4);
+           let cell6 = row.insertCell(5);
+           let cell7 = row.insertCell(6);
+           let cell8 = row.insertCell(7);
+           let cell9 = row.insertCell(8);
+           let cell10 = row.insertCell(9);
+           let cell11 = row.insertCell(10);
+
+           cell1.innerHTML=one
+           cell2.innerHTML=two
+           cell3.innerHTML=math_fack
+           cell4.innerHTML=english_fack
+           cell5.innerHTML=urdu_fack
+           cell6.innerHTML=science_fack
+           cell7.innerHTML=computer_fack
+           cell8.innerHTML=physics_fack
+           cell9.innerHTML=total_fack
+           cell10.innerHTML=persentage_fack
+           cell11.innerHTML=grade_fack
+        })
+    </script>
+</body>
+
+</html>
